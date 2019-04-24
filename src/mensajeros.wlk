@@ -30,10 +30,11 @@ object chukNorris {
 
 
 object neo {
-	var creditoChuk
+	var creditoChuk=false
 	method puedeEntregar(){ return paquete.estaPago() && paquete.destino().dejaPasar(self.peso(),self.puedeLlamar()) }
 	method puedeLlamar(){ return creditoChuk }
 	method credito(credito){ creditoChuk=credito }
+	method peso(){ return 0 }
 }
 
 
